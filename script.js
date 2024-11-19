@@ -8,8 +8,7 @@ function sendWish() {
         return;
     }
 
-    // Show alert
-    alert("Sinu soov on saadetud");
+    // Logic here to count how many wishes have been sent
 
     // Clear the textarea
     document.querySelector(".input-field").value = "";
