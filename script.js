@@ -9,9 +9,9 @@ function sendWish() {
     }
 
     // Track the wish event in Google Analytics
-    gtag('event', 'wish_sent', {
-        event_category: 'Engagement',
-        event_label: 'Wish Submission',
+    gtag("event", "wish_sent", {
+        event_category: "Engagement",
+        event_label: "Wish Submission",
         value: 1,
     });
 
