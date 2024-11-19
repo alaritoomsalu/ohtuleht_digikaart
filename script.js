@@ -8,12 +8,15 @@ function sendWish() {
         return;
     }
 
-    // Logic here to count how many wishes have been sent
+    // Track the wish event in Google Analytics
+    gtag('event', 'wish_sent', {
+        event_category: 'Engagement',
+        event_label: 'Wish Submission',
+        value: 1,
+    });
 
-    // Clear the textarea
+    // Clear the textarea and switch cards
     document.querySelector(".input-field").value = "";
-
-    // Hide the first card and show the second card
     document.querySelector(".first-card").classList.add("hidden");
     document.querySelector(".second-card").classList.remove("hidden");
 }
