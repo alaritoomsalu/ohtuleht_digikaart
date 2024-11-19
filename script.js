@@ -1,10 +1,3 @@
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-    dataLayer.push(arguments);
-}
-gtag('js', new Date());
-gtag('config', 'G-BZEXD6BL3C');
-
 function sendWish() {
     // Get the value from the textarea
     const wish = document.querySelector(".input-field").value;
